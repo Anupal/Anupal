@@ -41,8 +41,7 @@
         }
       }
       .main {
-          margin-top: 20vh;
-          padding: 10px;
+          padding: 20vh 0;
           text-align: center;
       }
 
@@ -68,6 +67,34 @@
           border-color: #cc3450;
           color: #cc3450;
       }
+
+      .footer-text {
+          margin-top: 20vh;
+          color: #fff;
+      }
+
+      @media (max-width: 48.75em) {
+          /*.main {
+              padding: 10vh 0;
+          }*/
+
+          .header-text {
+              font-size: 2rem;
+          }
+
+          .links {
+              font-size: 1.5rem;
+          }
+
+          .link {
+              padding: 5px 20px;
+              margin: 10px;
+          }
+
+          .footer-text {
+              font-size: 0.6rem;
+          }
+      }
     </style>
 </head>
 
@@ -75,9 +102,10 @@
     <div class="main">
         <h1 class="header-text">Anupal Mishra</h1>
         <div class="links">
-            <a href="https://www.linkedin.com/in/anupal-mishra/" class="fa fa-linkedin link"></a>
-            <a href="https://github.com/anupal" class="fa fa-github link"></a>
+            <a href="https://www.linkedin.com/in/anupal-mishra/" target="_blank" class="fa fa-linkedin link"></a>
+            <a href="https://github.com/anupal" target="_blank" class="fa fa-github link"></a>
         </div>
+        <p class="footer-text">Copyright © <script>document.write(new Date().getFullYear())</script> Anupal Mishra - All Rights Reserved.</p>
     </div>
 </body>
 
