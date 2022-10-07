@@ -21,11 +21,14 @@
           font-family: "Lato", "sans-seriff";
       }
 
-
+      /*
+        pink #ff3299
+        black #010101
+      */
       body {
-        background: linear-gradient(-45deg, #301934, #010101, #000051);
+        background: linear-gradient(-45deg, #1ee3d6, #ff3299, #0c0c7d, #eef207);
         background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
+        animation: gradient 10s ease infinite;
         height: 100vh;
       }
 
@@ -48,6 +51,7 @@
       .header-text {
           color: #fff;
           font-size: 4.5rem;
+          letter-spacing: 0.05em;
       }
 
       .links {
@@ -60,17 +64,18 @@
           padding: 10px 50px;
           color: #fff;
           text-decoration: none;
-          margin: 0 25px;
+          margin: 10px 25px;
       }
 
       .link:hover {
-          border-color: #cc3450;
-          color: #cc3450;
+          outline: 2px solid white;
+          outline-offset: -4px;
       }
 
       .footer-text {
           margin-top: 20vh;
           color: #fff;
+          letter-spacing: 0.05em;
       }
 
       @media (max-width: 48.75em) {
