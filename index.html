@@ -26,6 +26,7 @@
         background-size: 400% 400%;
         animation: gradient 10s ease infinite;
         height: 100vh;
+        background-attachment: fixed;
       }
 
       @keyframes gradient {
@@ -125,21 +126,28 @@
       /* Filter Buttons */
       .filter-buttons {
           text-align: center;
-          margin-bottom: 20px;
       }
 
       .filter-buttons button {
           padding: 10px 20px;
+          font-size: 1rem;
           margin: 5px;
-          border: none;
-          background-color: #ff3299;
-          color: #fff;
+          border: #0c0c7d solid 2px;
+          background-color: #fff;
+          color: #0c0c7d;
           cursor: pointer;
           border-radius: 5px;
       }
 
       .filter-buttons button.active {
           background-color: #0c0c7d;
+          color: #fff;
+      }
+
+      .filter-buttons-break {
+        border-bottom: #0c0c7d solid 2px;
+        width: 200px;
+        margin: 20px auto;
       }
 
       /* Individual Project Cards */
@@ -178,6 +186,7 @@
           font-size: 1rem;
           color: #333;
           margin-bottom: 10px;
+          text-align: justify;
       }
 
       .card-link {
@@ -196,7 +205,8 @@
           border-radius: 5px;
           text-decoration: none;
           margin-top: 15px;
-          padding: 5px 10px;
+          margin-right: 10px;
+          padding: 10px 10px;
       }
 
       .card-youtube {
@@ -205,7 +215,8 @@
           border-radius: 5px;
           text-decoration: none;
           margin-top: 15px;
-          padding: 5px 10px;
+          margin-right: 10px;
+          padding: 10px 10px;
       }
 
       .card-document {
@@ -214,7 +225,8 @@
           border-radius: 5px;
           text-decoration: none;
           margin-top: 15px;
-          padding: 5px 10px;
+          margin-right: 10px;
+          padding: 10px 10px;
       }
 
       .card-tags span {
@@ -327,6 +339,8 @@
                 <button onclick="filterProjects('Computer-Networking')">Computer Networking</button>
             </div>
 
+            <div class="filter-buttons-break"></div>
+
             <!-- Project Cards Section -->
             <div class="projects">
 
@@ -356,10 +370,10 @@
                     <div class="card-content">
                         <img src="static/ase-tech-diag.png" alt="Dynamic Sustainable Wayfinding">
                         <div class="card-info">
-                            <div class="card-title">Dynamic Sustainable Wayfindingr</div>
+                            <div class="card-title">Dynamic Sustainable Wayfinding</div>
                             <div class="card-desc">As a team of 7 people working on Advanced Software Engineer project at Trinity College Dublin, we developed a robust city-scale routing engine designed for multi-modal navigation, seamlessly integrating multiple transportation modes, including bus, tram, car, and bike. Our goal was to provide users with highly efficient, real-time navigation options that adapt to dynamic factors such as traffic congestion, road accidents, and public transit schedules. The engine, built in Java, implements a custom-weighted A* algorithm to deliver routes that are 99% optimal by evaluating live data inputs and prioritizing speed, convenience, and safety.</div>
 
-                            <div class="card-desc">To enable this, we processed extensive GTFS data to construct a multi-mode transit graph that represents Dublin and its surrounding counties. This allowed us to create a detailed map of the city’s transit system, enabling users to switch seamlessly between transport modes within a single journey. The backend was deployed using Kubernetes on Google Cloud, ensuring scalability and reliability under various load conditions, while infrastructure automation was managed through Terraform to facilitate rapid updates and deployment.</div>
+                            <div class="card-desc">To enable this, we processed extensive GTFS data to construct a multi-mode transit graph that represents Dublin and its surrounding counties. This allowed us to create a detailed map of the city's transit system, enabling users to switch seamlessly between transport modes within a single journey. The backend was deployed using Kubernetes on Google Cloud, ensuring scalability and reliability under various load conditions, while infrastructure automation was managed through Terraform to facilitate rapid updates and deployment.</div>
                                 
                             <div class="card-desc">In addition to backend development, we built a cross-platform mobile application that provided users with a streamlined navigation experience, offering real-time route updates and transit schedules. We also integrated gamification elements, such as setting personal goals and unlocking achievements, to boost user engagement and make the navigation process more interactive and rewarding. This holistic solution not only improves urban mobility but also encourages users to explore diverse transit options for their daily commutes.</div>
                             <a href="https://github.com/Anupal/vitamin-d-tracker" target="_blank" class="fa fa-github card-github">
