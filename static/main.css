@@ -45,6 +45,7 @@ body {
 .header-content {
     max-width: 35%;
     text-align: left;
+    position: fixed
 }
 
 .header-image {
@@ -66,6 +67,11 @@ body {
     margin: 20px 0;
     font-size: 1.1rem;
     line-height: 1.6;
+}
+
+.resume-link {
+    color: #fff;
+    font-weight: bold;
 }
 
 .links {
@@ -118,7 +124,8 @@ body {
     /* background-color: white; */
     /* border-radius: 10px; */
 
-    padding: 30px;
+    margin-left: 40%;
+    /* padding: 30px; */
     max-width: 60%;
 }
 
@@ -201,8 +208,6 @@ body {
     padding: 10px 0;
 }
 
-
-
 .card-title {
     font-size: 1.5rem;
     font-weight: bold;
@@ -212,6 +217,7 @@ body {
 
 .card-desc {
     font-size: 1.1rem;
+    line-height: 1.6;
     color: #b0acc5;
     margin-bottom: 10px;
     text-align: justify;
@@ -290,14 +296,27 @@ body {
     }
 
     .footer-text {
-        font-size: 0.6rem;
+        font-size: 1rem;
         margin-top: 5vh;
     }
 
-    .project-container {
+    /* .project-container {
         max-width: 100%;
         margin: 50px 0px;
         padding: 0;
+    } */
+
+    .header-content {
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .project-container {
+        margin-left: 0;
+        max-width: 100%;
+        width: 100%;
     }
 
     .project-header {
