@@ -322,7 +322,7 @@ body {
     .project-header {
         flex-direction: column; /* Stack elements vertically */
         align-items: flex-start; /* Align items to the left (default for vertical stacking) */
-        margin-bottom: 25px;
+        margin: 25px 0;
         padding: 0 20px;
     }
 
