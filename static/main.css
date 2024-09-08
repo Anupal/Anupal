@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background: linear-gradient(-45deg, #030347, #030330, #000);
+    background: linear-gradient(-45deg, #030347, #030330, #36012d);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     height: 100vh;
@@ -232,6 +232,10 @@ body {
     transition: background-color 0.3s ease;
 }
 
+.card span {
+    font-family: "Lato", "sans-seriff";
+}
+
 .card-github:hover,
 .card-youtube:hover,
 .card-document:hover {
@@ -268,6 +272,7 @@ body {
 
     .header-content {
         max-width: 100%;
+        padding: 0 10px;
         text-align: center;
     }
 
@@ -299,12 +304,12 @@ body {
         flex-direction: column; /* Stack elements vertically */
         align-items: flex-start; /* Align items to the left (default for vertical stacking) */
         margin-bottom: 25px;
+        padding: 0 20px;
     }
 
     .project-header-text {
         font-size: 1.8rem;
         margin-bottom: 20px; /* Adds spacing between the header and dropdown */
-        text-align: center; /* Center the header text on mobile */
         width: 100%; /* Take full width */
     }
 
@@ -319,9 +324,13 @@ body {
         font-size: 1rem;
     }
 
+    .projects {
+        padding: 0 10px;
+    }
+
     .card {
-        border-bottom: 1px #3e3d81 solid;
-        border-radius: 0;
+        background-color: rgba(255, 255, 255, 0.096);  /* Slightly translucent on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
     
     .card-title {
