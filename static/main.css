@@ -89,7 +89,7 @@ body {
 
 
 .link .tooltiptext {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -102,6 +102,10 @@ body {
     top: 150%;
     left: 50%;
     margin-left: -60px;
+}
+
+.tooltiptext {
+    font-family: "Lato", "sans-seriff";
 }
 
 .link .tooltiptext::after {
