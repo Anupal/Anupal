@@ -69,7 +69,7 @@ on-prem and cloud platforms. I recently concluded Masters in Computer Science at
                                 </a>
                                 <div class="card-desc">As part of my MSc Computer Science Dissertation research project, I explored the potential of leveraging QUIC transport protocol to improve data communication in IoT networks. I developed a Python-based IoT gateway that aggregates sensor data from multiple devices using CoAP and MQTT protocols over a single QUIC connection for enhanced performance. The project involved conducting experiments to demonstrate how QUIC can reduce round-trip time (RTT) and optimize the total bytes exchanged during data transmission. I built a Docker container-based lab to simulate real-world scenarios with live traffic, allowing for a comparative analysis between this QUIC-based system and a traditional TLS 1.3-based system. The results showed that QUIC offers significant performance improvements, especially in high network loss environments and with a larger number of connected clients, demonstrating its scalability and reliability for IoT communications.</div>
                                 <div class="card-tags">
-                                    <span>Distributed-Systems</span>
+                                    <span>Distributed Systems</span>
                                     <span>TLS1.3</span>
                                     <span>QUIC</span>
                                     <span>IoT</span>
@@ -106,8 +106,34 @@ on-prem and cloud platforms. I recently concluded Masters in Computer Science at
                             </div>
                         </div>
                     </div>
+
+                    <div class="card" data-tags="GUI-Application Distributed-Systems">
+                        <div class="card-content">
+                            <img src="static/dist-diags.png" alt="Cafe Mojo">
+                            <div class="card-info">
+                                <div class="card-title">Cafe Mojo - A globally distributed cafe management service.</div>
+                                <a href="https://github.com/Anupal/cafe-mojo" target="_blank" class="fa fa-github card-github">
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://1drv.ms/b/s!Ak9jBCtKs48vgugIRgh3ce0NJ62RFg?e=tQBMeU"target="_blank" class="fa fa-file card-document">
+                                    <span>Specification Document</span>
+                                </a>
+                                <div class="card-desc">For this project, I led a team to build a highly scalable, secure, and reliable system to manage cafe transactions and user memberships, with a focus on global availability. Our system allowed customers to view nearby cafes, manage group memberships, and redeem points across different regions, while cafe staff could process transactions and apply discounts. The functional requirements included synchronizing point-redemption across regions, notifying users when points were used, and supporting secure financial transactions. As the project lead, I was involved in all aspects of the design, and we divided the architecture into two main services: a Transaction Service for financial operations and a User Information Service for managing user data. Each region had its own dedicated services, load balancers, and databases to ensure scalability, reliability, and fault tolerance, with DNS routing client requests to the nearest data centre.</div>
     
-                    
+                                <div class="card-desc">Our team containerized the technical infrastructure using Docker to simulate a global environment, utilizing NGINX as the API gateway and load balancer, Postgres for database management, and HAProxy for database failover and load balancing. Each region had separate database instances to manage user data, group memberships, and discount points, with primary and secondary instances ensuring high availability and disaster recovery. I ensured we prioritized security by implementing enhanced protection for the Transaction Service, which handled financial data, while maintaining encrypted communication for the User Information Service to safeguard sensitive information. The system was designed to handle millions of users, ensure consistency and availability during regional failures, and protect both user and transaction data.</div>
+                                    
+                                <div class="card-tags">
+                                    <span>GUI Application</span>
+                                    <span>Distributed Systems</span>
+                                    <span>SQLAlchemy</span>
+                                    <span>PostgreSQL</span>
+                                    <span>NGINX</span>
+                                    <span>HA-Proxy</span>
+                                    <span>DNSMasq</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
     
                     <div class="card" data-tags="Machine-Learning">
                         <div class="card-content">
@@ -144,6 +170,29 @@ on-prem and cloud platforms. I recently concluded Masters in Computer Science at
                                     <span>GUI Application</span>
                                     <span>PyQT6</span>
                                     <span>Vitamin D</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" data-tags="Distributed-Systems Computer-Networking">
+                        <div class="card-content">
+                            <img src="static/dist-ndn.png" alt="Peer-to-Peer NDN for Medical Sensors ">
+                            <div class="card-info">
+                                <div class="card-title">Peer-to-Peer NDN for Medical Sensors</div>
+                                <a href="https://github.com/Anupal/distributed-ndn" target="_blank" class="fa fa-github card-github">
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://1drv.ms/b/s!Ak9jBCtKs48vgugLzQEqAH7owEQc1Q?e=wVyLEz" target="_blank" class="fa fa-file card-document">
+                                    <span>Specification Document</span>
+                                </a>
+                                <div class="card-desc">In this project, my team and I developed a secure peer-to-peer (P2P) medical sensor network to address the unique challenges faced by hospitals when implementing large-scale sensor networks. I led the design and development of this system, which aimed to create a reliable, scalable, and secure network for transmitting sensitive medical data from patient wearables to mobile devices used by doctors and nurses. We implemented a Named Data Networking (NDN) architecture that eliminated the traditional reliance on IP-based addressing, ensuring that the mobility requirements of healthcare professionals were met while maintaining data confidentiality and security. Our system used K-nearest neighbors (KNN) for simulating the wireless environment and TCP/IP sockets to establish P2P connections, ensuring encrypted, multi-hop communication between devices.</div>
+                                <div class="card-desc">As part of the project, we integrated multi-threading and multi-processing techniques to optimize the system for performance on Raspberry Pi devices. This allowed us to simulate a distributed network of up to 100 nodes, with each node functioning as a secure participant in the network. We implemented Public Key Infrastructure (PKI) for authentication and encryption, ensuring that only authorized hospital devices could join the network, and all communication was encrypted at each hop. Additionally, we designed the system to be interoperable with other networks through a gateway protocol, enabling seamless data exchange between different sensor networks.</div>
+                                <div class="card-tags">
+                                    <span>Distributed Systems</span>
+                                    <span>Computer Networking</span>
+                                    <span>Named Data Networking</span>
+                                    <span>Public Key Cryptography (PKI)</span>
                                 </div>
                             </div>
                         </div>
